@@ -1,0 +1,15 @@
+open terminal
+
+1) cd backend
+2) npm install
+3) change database connection on backend/config/config.json
+4) npx sequelize-cli db:migrate
+5) npx sequelize db:seed --seed 20220110044412-user-seeder
+6) npx sequelize db:seed --seed 20220110045156-product-seeder
+7) npx sequelize db:seed --seed 20220110045841-outlet-seeder
+8) npx sequelize db:seed --seed 20220110050833-order-seeder
+9) npm start
+
+1) cd frontend
+2) npm install
+3) npm start

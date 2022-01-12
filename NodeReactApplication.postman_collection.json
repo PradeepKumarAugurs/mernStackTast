@@ -1,0 +1,327 @@
+{
+	"variables": [],
+	"info": {
+		"name": "mernStack",
+		"_postman_id": "1d6142a8-9c05-e048-033a-325c7c60889c",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Products",
+			"description": "",
+			"item": [
+				{
+					"name": "All Products",
+					"request": {
+						"url": "localhost:8000/products/",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "get Product By id",
+					"request": {
+						"url": "localhost:8000/products/1",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Create New Product",
+					"request": {
+						"url": "localhost:8000/products/",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\" : \"testing2\",\n\t\"cost\" : 674\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Update Product By Id",
+					"request": {
+						"url": "localhost:8000/products/1",
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\" : \"Book1\",\n\t\"cost\" : 99\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Product By Id",
+					"request": {
+						"url": "localhost:8000/products/5",
+						"method": "DELETE",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Users",
+			"description": "",
+			"item": [
+				{
+					"name": "Get All Users",
+					"request": {
+						"url": "localhost:8000/users/",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Create New User",
+					"request": {
+						"url": "localhost:8000/users",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\" : \"Testing 3\",\n\t\"phoneNumber\" : 467846976846,\n\t\"reportingManager\" : 2\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Get User By Id",
+					"request": {
+						"url": "localhost:8000/users/1",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Update User By Id",
+					"request": {
+						"url": "localhost:8000/users/4",
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\" : \"golu\",\n\t\"phoneNumber\" : 9776934678376,\n\t\"reportingManager\" : 0\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Delete User By Id",
+					"request": {
+						"url": "localhost:8000/users/6",
+						"method": "DELETE",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Outlets",
+			"description": "",
+			"item": [
+				{
+					"name": "Get All Outlet",
+					"request": {
+						"url": "localhost:8000/outlets/",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Get Outlet By Id",
+					"request": {
+						"url": "localhost:8000/outlets/2",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Add New Outlet",
+					"request": {
+						"url": "localhost:8000/outlets",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\" : \"test5\",\n\t\"phone\" : 8986868788,\n\t\"address\" : \"Gomti Nagar Lucknow\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Update Outlet By Id",
+					"request": {
+						"url": "localhost:8000/outlets/2",
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\" : \"Kusu\",\n\t\"phone\" : 8986868788,\n\t\"address\" : \"Gomti Nagar Lucknow 226010\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Outlet By Id",
+					"request": {
+						"url": "localhost:8000/outlets/6",
+						"method": "DELETE",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Orders",
+			"description": "",
+			"item": [
+				{
+					"name": "Get All Orders",
+					"request": {
+						"url": "localhost:8000/orders/",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Get Order By Id",
+					"request": {
+						"url": "localhost:8000/orders/1",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Create New Order",
+					"request": {
+						"url": "localhost:8000/orders/",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"userId\" : 1,\n\t\"productId\" : 1,\n\t\"outletId\" : 2,\n\t\"quantity\" : 3,\n\t\"cost\" : 333\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Update Order By Id",
+					"request": {
+						"url": "localhost:8000/orders/1",
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"userId\" : 1,\n\t\"productId\" : 1,\n\t\"outletId\" : 2,\n\t\"quantity\" : 50,\n\t\"cost\" : 299\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Order Delete",
+					"request": {
+						"url": "localhost:8000/orders/6",
+						"method": "DELETE",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,4 @@
+npx sequelize db:seed --seed 20220110044412-user-seeder
+npx sequelize db:seed --seed 20220110045156-product-seeder
+npx sequelize db:seed --seed 20220110045841-outlet-seeder
+npx sequelize db:seed --seed 20220110050833-order-seeder
