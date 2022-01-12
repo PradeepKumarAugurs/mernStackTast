@@ -10,6 +10,6 @@ open terminal
 8) npx sequelize db:seed --seed 20220110050833-order-seeder
 9) npm start
 
-1) cd frontend
+1) cd front
 2) npm install
 3) npm start
